@@ -11,6 +11,8 @@
 		0C352C6A22C3DEEC00F74216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C352C6822C3DEEC00F74216 /* Main.storyboard */; };
 		0C352C6C22C3DEED00F74216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C352C6B22C3DEED00F74216 /* Assets.xcassets */; };
 		0C352C6F22C3DEED00F74216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C352C6D22C3DEED00F74216 /* LaunchScreen.storyboard */; };
+		0C808DA322C3E4AC008DF3F8 /* Wizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C808DA222C3E4AC008DF3F8 /* Wizard.swift */; };
+		0C808DA522C3E882008DF3F8 /* WizardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C808DA422C3E882008DF3F8 /* WizardController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		0C352C6B22C3DEED00F74216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C352C6E22C3DEED00F74216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C352C7022C3DEED00F74216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C808DA222C3E4AC008DF3F8 /* Wizard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wizard.swift; sourceTree = "<group>"; };
+		0C808DA422C3E882008DF3F8 /* WizardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		0C808D9F22C3E2CA008DF3F8 /* MODELS */ = {
 			isa = PBXGroup;
 			children = (
+				0C808DA222C3E4AC008DF3F8 /* Wizard.swift */,
 			);
 			path = MODELS;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 		0C808DA122C3E2F4008DF3F8 /* MODEL CONTROLLERS */ = {
 			isa = PBXGroup;
 			children = (
+				0C808DA422C3E882008DF3F8 /* WizardController.swift */,
 			);
 			path = "MODEL CONTROLLERS";
 			sourceTree = "<group>";
@@ -188,6 +194,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C808DA322C3E4AC008DF3F8 /* Wizard.swift in Sources */,
+				0C808DA522C3E882008DF3F8 /* WizardController.swift in Sources */,
 				0C352C6522C3DEEC00F74216 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,21 +8,33 @@
 
 import UIKit
 
-class Wizard {
+class Wizard: Codable {
     
     let name: String
-    let house: String
+    let house: String?
     let bloodStatus: String
-    let role: String
-    // Not from API
-    let houseImage: UIImage
+    let role: String?
     
-    init(name: String, house: String, bloodStatus: String, role: String, houseImage: UIImage) {
+    init(name: String, house: String, bloodStatus: String, role: String) {
         self.name = name
         self.house = house
         self.bloodStatus = bloodStatus
         self.role = role
-        // Not from API
-        self.houseImage = houseImage
     }
+ 
 }
+
+//"_id": "5a0fa4daae5bc100213c232e",
+//"name": "Hannah Abbott",
+//"role": "student",
+//"house": "Hufflepuff",
+//"school": "Hogwarts School of Witchcraft and Wizardry",
+//"__v": 0,
+//"ministryOfMagic": false,
+//"orderOfThePhoenix": false,
+//"dumbledoresArmy": true,
+//"deathEater": false,
+//"bloodStatus": "half-blood",
+//"species": "human"
+
+

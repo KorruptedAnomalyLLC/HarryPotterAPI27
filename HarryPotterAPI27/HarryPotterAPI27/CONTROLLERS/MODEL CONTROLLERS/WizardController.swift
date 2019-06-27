@@ -15,7 +15,6 @@ class WizardController {
     let baseURL = URL(string: "https://www.potterapi.com/v1/characters/")
     
     var wizards: [Wizard] = []
-    var displayedWizard: Wizard?
     
     func fetchCharacters(completion: @escaping (Bool) -> Void) {
         
@@ -49,7 +48,6 @@ class WizardController {
     
     func getRandomCharacter() -> Wizard? {
         guard let wizard = wizards.randomElement() else { return nil }
-        self.displayedWizard = wizard
         return wizard
     }
 }

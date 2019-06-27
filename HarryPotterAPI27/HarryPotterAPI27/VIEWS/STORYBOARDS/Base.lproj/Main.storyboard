@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Main View Controller-->
+        <!--Wizard View Controller-->
         <scene sceneID="9eM-Xc-3Jr">
             <objects>
-                <viewController id="Wnd-AP-ZFO" customClass="MainViewController" customModule="HarryPotterAPI27" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wnd-AP-ZFO" customClass="WizardViewController" customModule="HarryPotterAPI27" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zYJ-W7-35W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,10 +63,13 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkD-zR-Ci0">
-                                <rect key="frame" x="12" y="803" width="390" height="63"/>
-                                <fontDescription key="fontDescription" name="HarryP" family="Harry P" pointSize="50"/>
-                                <state key="normal" title="(wand)">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkD-zR-Ci0">
+                                <rect key="frame" x="144.5" y="759" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WkD-zR-Ci0" secondAttribute="height" multiplier="1:1" id="43G-Wf-c5t"/>
+                                    <constraint firstAttribute="width" constant="125" id="hna-fS-CjC"/>
+                                </constraints>
+                                <state key="normal" title="(wand)" image="Wand">
                                     <color key="titleColor" red="1" green="0.3736549139" blue="0.047485314610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
@@ -76,19 +79,18 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="WkD-zR-Ci0" firstAttribute="leading" secondItem="fnb-oU-0dL" secondAttribute="leading" constant="12" id="0OL-S8-aNa"/>
+                            <constraint firstAttribute="bottom" secondItem="WkD-zR-Ci0" secondAttribute="bottom" constant="12" id="0NF-R0-Ohh"/>
                             <constraint firstItem="aNE-yt-SHy" firstAttribute="centerY" secondItem="zYJ-W7-35W" secondAttribute="centerY" id="0da-5K-LHS"/>
                             <constraint firstItem="fnb-oU-0dL" firstAttribute="trailing" secondItem="aNE-yt-SHy" secondAttribute="trailing" constant="61" id="5YV-OJ-tbP"/>
                             <constraint firstItem="fnb-oU-0dL" firstAttribute="trailing" secondItem="og2-ik-rxJ" secondAttribute="trailing" constant="12" id="75q-Cc-VK7"/>
                             <constraint firstItem="og2-ik-rxJ" firstAttribute="top" secondItem="fnb-oU-0dL" secondAttribute="top" constant="30" id="8d7-5Q-dTv"/>
                             <constraint firstItem="mJp-tp-K2I" firstAttribute="top" secondItem="aNE-yt-SHy" secondAttribute="bottom" constant="50" id="E8h-Ya-KI3"/>
                             <constraint firstItem="mJp-tp-K2I" firstAttribute="leading" secondItem="fnb-oU-0dL" secondAttribute="leading" constant="12" id="EUq-xG-xw8"/>
-                            <constraint firstItem="WkD-zR-Ci0" firstAttribute="top" secondItem="mJp-tp-K2I" secondAttribute="bottom" constant="86" id="Pw9-vs-tqO"/>
                             <constraint firstItem="aNE-yt-SHy" firstAttribute="centerX" secondItem="zYJ-W7-35W" secondAttribute="centerX" id="Sfw-zd-Qpe"/>
+                            <constraint firstItem="WkD-zR-Ci0" firstAttribute="centerX" secondItem="fnb-oU-0dL" secondAttribute="centerX" id="UhU-iP-9Ld"/>
                             <constraint firstItem="og2-ik-rxJ" firstAttribute="leading" secondItem="fnb-oU-0dL" secondAttribute="leading" constant="12" id="b5o-eZ-sCI"/>
                             <constraint firstItem="fnb-oU-0dL" firstAttribute="trailing" secondItem="mJp-tp-K2I" secondAttribute="trailing" constant="12" id="jz3-zQ-aUp"/>
                             <constraint firstItem="aNE-yt-SHy" firstAttribute="leading" secondItem="fnb-oU-0dL" secondAttribute="leading" constant="61" id="kmV-vK-bSw"/>
-                            <constraint firstItem="fnb-oU-0dL" firstAttribute="trailing" secondItem="WkD-zR-Ci0" secondAttribute="trailing" constant="12" id="xhx-Kf-dib"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fnb-oU-0dL"/>
                     </view>
@@ -98,6 +100,7 @@
                         <outlet property="houseLabel" destination="5Es-bB-XjS" id="4vl-zt-YOp"/>
                         <outlet property="nameLabel" destination="bQf-Yh-HA2" id="2i1-t2-QpJ"/>
                         <outlet property="roleLabel" destination="quw-Jv-OfM" id="3xz-oV-drN"/>
+                        <outlet property="wandButton" destination="WkD-zR-Ci0" id="Sxi-5P-dH3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WX8-dn-GjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -105,4 +108,7 @@
             <point key="canvasLocation" x="192.75362318840581" y="72.991071428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Wand" width="870" height="617"/>
+    </resources>
 </document>
